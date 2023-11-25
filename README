@@ -1,0 +1,36 @@
+README
+
+### PART 1 -- NN Library
+
+The code can be run from the terminal. In the example_main() we defined a simple MLP with some architecture values selected by us. Next we load iris, shuffle and split it. Later we preprocess data define parameters for training the model, train the model and lastly evaluate the model on test data.
+
+If you wish to change used parameters edit:
+
+```python
+input_dim = 4
+neurons = [16, 45,23, 3]
+activations = ['relu','sigmoid','relu', "identity"]
+```
+
+to load different dataset edit;
+```python
+dat = np.loadtxt("iris.dat")
+```
+to edit trainer:
+```python
+trainer = Trainer(
+        network=net,
+        batch_size=8,
+        nb_epoch=1000,
+        learning_rate=0.01,
+        loss_fun="cross_entropy",
+        shuffle_flag=True,
+    )
+```
+
+
+### PART 2 -- NN Classifier
+
+The code can be run from the terminal. In the example_main() provided the default Regressor (with optimal parameters) is called. The design of the model can be edited by changing different aspects, such as the layers sizes of the learning rate. It is recommened to first create a dictionary of the elements you wish to change, and from them pass them into the regressor using Regressor(X, **hyperparameters) in order to avoid errors.
+
+The save regressor lines have been hashed out in order to preserve the best model, though these can be enabled if desired. The hyperparameter tuning may take a long time to run, so it isn't recommend to allow the program to run to completion. The user can also instead choose to load in the best model and use that instead to predict results.
