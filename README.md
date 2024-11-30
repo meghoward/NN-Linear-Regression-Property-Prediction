@@ -4,6 +4,13 @@
 
 This repository contains implementations of deep neural networks designed for both regression and classification tasks. The models leverage PyTorch's `nn.Module` to dynamically construct neural networks based on specified parameters, making them powerful tools for approximating complex functions. The project focuses on optimising the models through regularisation techniques and an exhaustive hyperparameter search to prevent overfitting and enhance performance.
 
+## Authors
+
+- Aidan Holmes
+- Meg Howard
+- Hugo Frelin
+- Igor Sadalski
+  
 ## Model Architecture
 
 The neural networks are built using PyTorch and are designed to be flexible, allowing for customised input and output sizes, as well as varying numbers and sizes of hidden layers. Key features include:
